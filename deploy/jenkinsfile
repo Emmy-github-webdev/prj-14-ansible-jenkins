@@ -20,7 +20,7 @@ pipeline {
 
       stage('Checkout SCM') {
          steps{
-            git branch: 'main', url: 'https://github.com/Emmy-github-webdev/jenkins-ansible-integration.git'
+            git branch: 'main', url: 'https://github.com/Emmy-github-webdev/prj-14-ansible-jenkins.git'
          }
        }
 
