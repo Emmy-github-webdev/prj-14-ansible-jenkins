@@ -1,21 +1,8 @@
 ---
-# - hosts: db
-# - name: database assignment
-#   ansible.builtin.import_playbook: ../static-assignments/database.yml
-
-# - hosts: nginx
-# - name: nginx assignment
-#   ansible.builtin.import_playbook: ../static-assignments/nginx.yml
-
-# - hosts: artifactory
-# - name: artifactory assignment
-#   ansible.builtin.import_playbook: ../static-assignments/artifactory.yml
-
 - hosts: db
-- name: database
-  ansible.builtin.import_playbook: ../static-assignments/uat-webservers.yml
+- name: database assignment
+  ansible.builtin.import_playbook: ../static-assignments/database.yml
 
-# - hosts: todo
-# - name: Deploy the todo application
-#   ansible.builtin.import_playbook: ../static-assignments/deployment.yml
-
+- hosts: nginx
+- name: nginx assignment
+  ansible.builtin.import_playbook: ../static-assignments/nginx.yml
