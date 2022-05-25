@@ -1,3 +1,5 @@
 ---
-- hosts: db
-  roles: mysql
+- hosts: nginx
+  become: true
+  roles:
+      ../nginx
